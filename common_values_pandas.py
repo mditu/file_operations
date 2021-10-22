@@ -9,8 +9,4 @@ file_redbull = pd.read_csv("/home/mariacristina_ditu_liveramp_com/Kantar/check/m
 
 common = file_llama.merge(file_redbull, on="Customer_Link", how="inner")
 
-
-#common = data1.merge(data2, on="Customer_Link", how="inner")
-#common.to_csv("/home/mariacristina_ditu_liveramp_com/Kantar/check/redbull_first_join.csv", index=False)
-
 common.to_csv("/home/mariacristina_ditu_liveramp_com/Kantar/check/join_pukka_merge.csv", index=False)
